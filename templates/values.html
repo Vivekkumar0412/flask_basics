@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>{{global_naam}}</h1>
+    <h1>{{naam}} {{int_html_val}}</h1>
+    
+      {% for i in range(4) %}
+      <h1>{{i}}</h1>
+      {% endfor %}
+    
+
+    <table border="1">
+      {% for k in dict_val %}
+      <tr>
+        <th>{{k}}</th>
+        <td>{{dict_val[k]}}</td>
+        {% endfor %}
+      </tr>
+    </table>
+  </body>
+</html>
